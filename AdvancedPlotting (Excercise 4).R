@@ -77,8 +77,9 @@ ggplot() + #this just sets an empty frame to build upon
   ylab("Patient Alive=0/Dead=1")+xlab("Age")
 
 
+
 #####
 #find here more interesting visualisations
 #http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html
 #####
-
+### Testzeile
