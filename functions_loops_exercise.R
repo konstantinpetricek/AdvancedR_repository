@@ -1,9 +1,10 @@
 #create several files for later read in
-for (i in 1:100)
+for (i in 1:50)
 write.csv(file=paste("file_",i,".csv",sep=""),data.frame(y=rnorm(20,0,3)))
 #Exercise 1
 #write a function to load and retrieve the mean and max of each file
 #plot a boxplot
+#nice function there!
 extractor<- function (k){
   test.data<-read.csv(paste("file_",k,".csv",sep=""))
   print(mean(test.data$y))
@@ -12,7 +13,7 @@ extractor<- function (k){
 }
 #plot the first 10 datasets
 par(mfrow=c(2,5))
-for(i in 1:10)
+for(i in 1:5)
   extractor(i)
 
 #now plot only extreme datasets
